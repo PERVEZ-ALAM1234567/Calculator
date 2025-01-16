@@ -53,7 +53,7 @@ Follow these simple steps to run the calculator:
    git clone (https://github.com/PERVEZ-ALAM1234567/Calculator.git)
 
 
-🏆 Why This Project is Unique
+🏆 Why This Project is Unique --> 
 Combines functionality with style for an exceptional user experience.
 Uses clean and commented code, making it easy to understand and extend.
 Fully responsive, ensuring usability on any device.
