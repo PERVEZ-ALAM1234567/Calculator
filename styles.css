@@ -1,0 +1,173 @@
+/* General Reset */
+/* Apply universal reset to remove default margins and paddings for all elements */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-family: 'Poppins', sans-serif; /* Set default font family for all elements */
+}
+
+/* Body Styling */
+/* Style the body to create a responsive, visually appealing background */
+body {
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); /* Gradient background with dark shades */
+    color: #ffffff; /* Set text color to white for visibility */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Set height to 100% of the viewport */
+    padding: 20px; /* Add padding around the edges */
+}
+
+/* Container */
+/* Style the main container for the calculator */
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border: 2px solid #6dd5ed; /* Light blue border for contrast */
+    border-radius: 20px; /* Rounded corners */
+    padding: 30px; /* Inner spacing */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+    text-align: center; /* Center-align text inside the container */
+    max-width: 400px; /* Set maximum width for responsiveness */
+    width: 100%; /* Ensure the container takes full width on smaller screens */
+}
+
+/* Title */
+/* Style the calculator's title */
+.title {
+    font-size: 2.5rem; /* Set large font size */
+    color: #6dd5ed; /* Light blue color for the title */
+    margin-bottom: 20px; /* Space below the title */
+    text-shadow: 0 0 10px #6dd5ed; /* Add a glowing effect to the text */
+}
+
+/* Input Fields */
+/* Style the input fields for numbers */
+.input-area {
+    margin-bottom: 20px; /* Space below the input section */
+}
+
+.input-field {
+    background: transparent; /* Transparent background for modern look */
+    border: 2px solid #6dd5ed; /* Light blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Inner spacing for better usability */
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    color: #ffffff; /* White text color for contrast */
+    width: 100%; /* Full width of the container */
+    margin: 10px 0; /* Space above and below each input */
+    transition: all 0.3s ease; /* Smooth transition for focus effect */
+    text-align: center; /* Center-align text inside the input */
+}
+
+/* Style input fields when focused */
+.input-field:focus {
+    border-color: #ff6a00; /* Change border color on focus */
+    box-shadow: 0 0 8px #ff6a00; /* Add an orange glow */
+    outline: none; /* Remove default outline */
+}
+
+/* Buttons */
+/* General button styling */
+.btn {
+    background: linear-gradient(145deg, #6dd5ed, #2193b0); /* Gradient background */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 19px; /* Inner spacing for larger buttons */
+    margin: 5px; /* Space around buttons */
+    font-size: 1.2rem; /* Slightly larger text */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    width: 60px; /* Fixed width for consistent button size */
+}
+
+/* Change button appearance on hover */
+.btn:hover {
+    background: linear-gradient(145deg, #ff6a00, #ee0979); /* Gradient background changes to orange/pink */
+    box-shadow: 0 8px 15px rgba(255, 106, 0, 0.7); /* Brighter shadow effect */
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+/* Add click effect for buttons */
+.btn:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+}
+
+/* Operator Button Styling */
+/* Specific styling for operator buttons */
+.operator {
+    background: linear-gradient(145deg, #b06ab3, #4568dc); /* Gradient with purple and blue shades */
+}
+
+/* Operator button hover effect */
+.operator:hover {
+    background: linear-gradient(145deg, #ff0844, #ffb199); /* Gradient with red and light pink */
+}
+
+/* Equal Button Styling */
+/* Specific styling for the equal button */
+.equal {
+    background: linear-gradient(145deg, #ff512f, #dd2476); /* Gradient with red and pink shades */
+    color: #ffffff; /* White text color */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Equal button hover effect */
+.equal:hover {
+    background: linear-gradient(145deg, #ff6a00, #ee0979); /* Gradient changes to orange/pink */
+}
+
+/* Number Buttons */
+/* Styling for number buttons */
+.number-buttons {
+    margin-top: 20px; /* Space above the number section */
+}
+
+/* Individual number button styling */
+.number {
+    background: linear-gradient(145deg, #7f00ff, #e100ff); /* Purple gradient for number buttons */
+}
+
+/* Answer Section */
+/* Styling for the answer display area */
+.answer {
+    font-size: 1.8rem; /* Larger font for visibility */
+    margin-top: 20px; /* Space above the answer */
+    color: #f4f4f4; /* Light gray text color */
+    text-shadow: 0 0 5px #ff6a00; /* Add a glowing orange shadow to the text */
+    animation: fadeIn 2s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Animations */
+/* Keyframe animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(-10px); /* Move slightly upward */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* Reset to original position */
+    }
+}
+
+/* Reset Button Styling */
+/* Styling for the reset button */
+.reset {
+    background: linear-gradient(145deg, #ff4b1f, #ff9068); /* Gradient with orange shades */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold text for emphasis */
+    padding: 19px 2px; /* Inner spacing */
+    box-sizing: border-box; /* Ensure padding fits inside the button */
+    white-space: nowrap; /* Prevent text from wrapping inside the button */
+    text-align: center; /* Center-align the text */
+}
+
+/* Reset button hover effect */
+.reset:hover {
+    background: linear-gradient(145deg, #ff6a00, #ee0979); /* Gradient changes to orange/pink */
+    box-shadow: 0 8px 15px rgba(255, 106, 0, 0.7); /* Brighter shadow effect */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}

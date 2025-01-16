@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specify the document type and language -->
+    <meta charset="UTF-8"> <!-- Define the character encoding as UTF-8 for universal character support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure responsive design for mobile devices -->
+    <meta name="description" content="A modern and stylish calculator with night view theme"> <!-- Provide a brief description of the page for search engines -->
+    <meta name="author" content="Your Name"> <!-- Define the author's name for attribution -->
+    <meta name="keywords" content="Calculator, HTML5, CSS, Modern Design"> <!-- Add keywords to improve search engine optimization -->
+    <title>Calculator</title> <!-- Set the title of the web page that appears in the browser tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link the external CSS file for styling -->
+</head>
+<body>
+    <!-- Main container to hold the calculator -->
+    <main class="container">
+        <!-- Title of the calculator -->
+        <h1 class="title">CALCULATOR</h1> <!-- Display the main heading -->
+
+        <!-- Input section for entering numbers -->
+        <section class="input-area">
+            <!-- Input field for the first number -->
+            <input id="num1" type="number" placeholder="Enter number 1" class="input-field"> 
+            <!-- Input field for the second number -->
+            <input id="num2" type="number" placeholder="Enter number 2" class="input-field"> 
+        </section>
+
+        <!-- Section to display the answer -->
+        <h2 id="Answer" class="answer">Answer: </h2> <!-- Area to show calculation results dynamically -->
+
+        <!-- Section for operator buttons -->
+        <section class="button-area">
+            <button id="Add" class="btn operator">+</button> <!-- Button for addition -->
+            <button id="Subtract" class="btn operator">-</button> <!-- Button for subtraction -->
+            <button id="Multiply" class="btn operator">*</button> <!-- Button for multiplication -->
+            <button id="Divide" class="btn operator">/</button> <!-- Button for division -->
+            <button id="Percentage" class="btn operator">%</button> <!-- Button for calculating percentage -->
+            <button id="Equal_to" class="btn equal">=</button> <!-- Button for performing the calculation -->
+            <button id="Reset" class="btn reset">Reset</button> <!-- Button to reset all input fields and results -->
+        </section>
+
+        <!-- Section for number buttons -->
+        <section class="number-buttons">
+            <!-- Buttons for individual digits and special number inputs -->
+            <button class="btn number">1</button> <!-- Button for number 1 -->
+            <button class="btn number">2</button> <!-- Button for number 2 -->
+            <button class="btn number">3</button> <!-- Button for number 3 -->
+            <button class="btn number">4</button> <!-- Button for number 4 -->
+            <button class="btn number">5</button> <!-- Button for number 5 -->
+            <button class="btn number">6</button> <!-- Button for number 6 -->
+            <button class="btn number">7</button> <!-- Button for number 7 -->
+            <button class="btn number">8</button> <!-- Button for number 8 -->
+            <button class="btn number">9</button> <!-- Button for number 9 -->
+            <button class="btn number">0</button> <!-- Button for number 0 -->
+            <button class="btn number">00</button> <!-- Button for two zeros -->
+            <button class="btn number">000</button> <!-- Button for three zeros -->
+        </section>
+    </main>
+
+    <!-- Link the external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
