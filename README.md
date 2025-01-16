@@ -50,7 +50,7 @@ Follow these simple steps to run the calculator:
 
 1. Download or clone this repository:  
    bash (Terminal)
-   git clone https://github.com/yourusername/calculator-project.git
+   git clone (https://github.com/PERVEZ-ALAM1234567/Calculator.git)
 
 
 🏆 Why This Project is Unique
